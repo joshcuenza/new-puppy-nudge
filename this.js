@@ -10,7 +10,21 @@ $('main').prepend(`<style>
     padding: 0 20px;
     margin: -10px 0;
 }
-
+.gx-overlap{
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 300px;
+    width: 100%;
+}
+.gx-breed>img{
+    width:100%;
+}
+.gx-breed {
+    position: relative;
+    width:100%;
+}
 .puppy-nav .guide-items>h4 {
     font-size: 18px;
     font-weight: 100;
@@ -422,9 +436,8 @@ div>p,
     width: 100%;
 }
 
-
 #content .product-item.product .wrap .details div.price p.product-latest-rrp {
-
+    font-size: 12px !important;
     line-height: 15px !important;
 }
 
@@ -581,6 +594,11 @@ option {
     padding: 20px;
 }
 
+@media screen and (max-width: 900px){
+    #foodList .quick-add-to-cart{
+        display: none;
+    }
+}
 @media screen and (max-width: 960px) {
     .relevance-filter {
         flex-direction: column !important;

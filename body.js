@@ -1,4 +1,5 @@
 $('main').html(` 
+
 <div class="root">
 <div class="gx-container">
     <div class="puppy-nudge-header"> <img alt="Puppy Header"
@@ -198,6 +199,24 @@ $('main').html(`
                                         src="https://www.petcircle.com.au/petcircle-assets/images/puppy-nudge/food-large-breed.png">
                                 </div>
                             </div>
+                            <div style="
+            position: relative;
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            height: 60px;
+            margin-top: -99px;
+        "><button class="quick-add-to-cart" data-sku="LOV7660"
+                                    style="position: initial;flex-basis: 15%;max-width: 193px;max-height: 55px;padding: 10px;margin-right: 25px;">
+                                    + Add to Cart
+                                </button><button class="quick-add-to-cart" data-sku="LOV7660"
+                                    style="position: initial;flex-basis: 15%;max-width: 193px;max-height: 55px;padding: 10px;margin-right: 25px;">
+                                    + Add to Cart
+                                </button><button class="quick-add-to-cart" data-sku="LOV7660"
+                                    style="position: initial;flex-basis: 15%;max-width: 193px;max-height: 55px;padding: 10px;margin-right: 25px;">
+                                    + Add to Cart
+                                </button>
+                            </div>
                             <div class="gx-row-flex-center">
                                 <div class="gx-inner-content">
                                     <h3>Benefits you can see (and smell!)
@@ -347,7 +366,7 @@ $('main').html(`
                             <div class="gx-product gx-row-flex-center">
                                 <div class="gx-row-flex-center gx-breed small-breed">
                                     <img alt="FNW small breed"
-                                        src="https://www.petcircle.com.au/petcircle-assets/images/puppy-nudge/fnw-small-breed.png">
+                                        src="https://www.petcircle.com.au/petcircle-assets/images/puppy-nudge/fnw-small-breed-new.png">
                                 </div>
                                 <div class="gx-row-flex-center gx-breed medium-breed hidden">
                                     <img alt="FNW medium breed"
@@ -806,98 +825,6 @@ $('main').html(`
 </div>
 </div>
 </div>
-<div class="puppy-nav-list">
-<div class="puppy-nav">
-    <div class="gx-row-flex-center">
-        <h3>Puppy Essentials Checklist</h3>
-    </div>
-    <div class="guide-items guide-items-top">
-        <div class="checklist-container">
-            <div class="checkbox-item"> <input type="checkbox" class="food-checker" disabled="" id="foodNav">
-                <label for="foodNav"></label></div>
-        </div>
-        <h4>1. Food</h4>
-    </div>
-    <div class="guide-items guide-items-top">
-        <div class="checklist-container">
-            <div class="checkbox-item"> <input type="checkbox" disabled="" class="fnw-checker" id="fnwNav">
-                <label for="fnwNav"></label> </div>
-        </div>
-        <h4>2. Flea and Worming</h4>
-    </div>
-    <div class="guide-items guide-items-top">
-        <div class="checklist-container">
-            <div class="checkbox-item"> <input type="checkbox" disabled="" class="tnt-checker" id="tntNav">
-                <label for="tntNav"></label> </div>
-        </div>
-        <h4>3. Treats and Toys</h4>
-    </div>
-    <div class="guide-items guide-items-top">
-        <div class="checklist-container">
-            <div class="checkbox-item"> <input type="checkbox" disabled="" class="groom-checker" id="groomNav">
-                <label for="groomNav"></label> </div>
-        </div>
-        <h4>4. Grooming</h4>
-    </div>
-    <div class="gx-anchor">
-        <a href="#foodLeft">I need an extend checklist</a>
-    </div>
-
-</div>
-<div class="puppy-nav">
-    <div class="gx-row-flex-center">
-        <h3>Content
-            Summary&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        </h3>
-    </div>
-    <div class="gx-anchor">
-        <a href="#foodLeft">Best food for your puppy</a>
-    </div>
-    <div class="gx-anchor">
-        <a href="#fnwp">Flea and worming for puppies</a>
-    </div>
-    <div class="gx-anchor">
-        <a href="#tntBox">Best treats for puppies
-
-        </a>
-    </div>
-    <div class="gx-anchor">
-        <a href="#toyBox">Best toys for puppies</a>
-    </div>
-    <div class="gx-anchor">
-        <a href="#groomList">Grooming your puppy</a>
-    </div>
-
-
-</div>
-
-<div style="
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-    ">
-
-    <div style="
-        width: 100px;
-        background: grey;
-        border-radius: 59%;
-        height: 100px;
-        /* flex-basis: 26%; */
-    "></div>
-    <div style="
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-    ">
-        <p>Written by: </p>
-        <h3>Dr. Teagan Lever
-        </h3>
-    </div>
-</div>
-<p>When Teagan's not busy sharing her knowledge of all things pets as one ofPet Circle's
-    resident vet, she is the human companion of two intense English staffies and a three-legged
-    cat named Steve.</p>
-</div>
 </div>
 
 
@@ -926,35 +853,11 @@ $('.guide-items').on('click', function () {
         $(navCheck).removeAttr('checked');
     } else {
         slide.addClass('hidden');
-        if (ischecked)
+        if (!ischecked)
             $(navCheck).attr('checked', true);
 
     }
-    // var i = 0;
-    // $('input[type="checkbox"]').each(function () {
-    //     if ($(this).prop("checked")) {
-    //         if (i >= 8) {
-    //             $('.food-checker').attr('checked', true);
-    //         }
-    //         ++i;
-    //     }
-    // });
 });
-/*$('.gx-table').each(function () {
-    if (this.getBoundingClientRect().height && this.getBoundingClientRect().width) {
-        var y = this.getBoundingClientRect().height ? this.getBoundingClientRect().height : null;
-        var z = this.getBoundingClientRect().width ? this.getBoundingClientRect().width : null;
-        var j = this.parentNode;
-        var setScale = ($(window).width() - 10) / z;
-        if (setScale < 1)
-            $(this).css({
-                'transform': 'scale(' + setScale + ')'
-            });
-        $(j).height(this.getBoundingClientRect().height);
-        y = j.getBoundingClientRect().height;
-        console.log(y + ' ; ' + z);
-    }
-});*/
 
 
 $('.gx-filter').on('change', function () {
